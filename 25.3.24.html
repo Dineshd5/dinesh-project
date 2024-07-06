@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<div>
+<p id="demo">Dinesh</p>
+<button onclick="reverseName()">click here</button>
+</div>
+<br>
+<div>
+    <input type="Number" id="input" value="0"><br>
+    <br>
+    <button onclick="increase()">increase</button>
+    <button onclick="decrease()">decrease</button>
+</div>
+<script>
+    function reverseName() {
+        let reverse = document.getElementById("demo").innerHTML;
+     let reverseNew = reverse.split('').reverse().join(''); 
+     document.getElementById("demo").innerHTML=reverseNew;
+    }
+</script>
+<script>
+    function increase() {
+        var inputValue=parseInt(document.getElementById("input").value)   
+        var inputIncrease=inputValue + 1;
+        document.getElementById("input").value=inputIncrease;
+    }
+    function decrease() {
+        var inputValue=document.getElementById("input")
+        inputValue.value--
+    }
+</script>
+<br>
+<style>
+    .circle{
+        background-color: brown;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%  ;
+        transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+     
+               }
+    .container{
+        display: flex;
+ flex-direction: column;
+     }
+   </style>
+<div class="container">
+    <div class="circle" id="circle"></div>
+<div> <input type="range" id="range" value="0" min="0" max="100" onchange="circle()"></div>
+</div>
+    <script>
+        function circle() {
+           var valueRange = document.getElementById("range").value;
+           var circlesize = document.getElementById("circle");
+           var newSize = 80 + (valueRange /100) *80;
+           circlesize.style.width=newSize + "px" ;
+           circlesize.style.height=newSize + "px ";
+        }
+    </script>
+<div >
+    <h4>where is your location</h4>
+    <form id="locationForm"> 
+        <!-- onsubmit="mystring(); return false;"> inline event handler just for your reference dont need to use two times -->
+    <input type="text" id="text1" placeholder="enter location">
+    <input type="text" id="text2" placeholder="enter location"><br><br>
+    <input type="submit" value="Compare">
+    </form >
+
+<p id="displayContent1"> </p>
+</div>
+
+<script>
+     // Add event listener for form submission
+     document.getElementById("locationForm").addEventListener("submit", function(event) {
+        // Prevent default form submission behavior
+        event.preventDefault();
+
+        // Call the mystring function to handle the comparison
+        mystring();
+    });
+
+    function mystring() {
+     
+    var stringName1 = document.getElementById("text1").value.toLowerCase();
+    var stringName2 = document.getElementById("text2").value.toLowerCase();
+   var displayContent =  document.getElementById("displayContent1");
+if( stringName1===stringName2){
+displayContent.textContent="same location";
+}
+
+else{
+displayContent.textContent="different location";
+}
+    }
+
+</script>
+
+<div>
+    <input type="text" id="userText" placeholder="enter text">
+    <button onclick="findconsonants()" id="button" >click here </button>
+    <p id="consonantletters"> </p>
+</div>
+<script>
+    function findconsonants(){
+        let consonant = /[BCDFGHJKLMNPQRSTVWXYZ]/g;
+let userText=document.getElementById("userText").value;
+let userValue= userText.toUpperCase();
+let userConsonant=userValue.match(consonant);
+
+if(userConsonant){
+    document.getElementById("consonantletters").innerHTML=userConsonant;
+}
+else{
+document.getElementById("constantletters").innerHTML="no consonant found";
+}
+    }
+    
+</script>
+
+
+<div>
+    <input type="text" id="textArea" readonly>
+</div>
+<div class="container1">
+    <h1>calculator</h1>
+    <div class="container1_button">
+<button  onclick="append('1')">1</button>
+<button  onclick="append('2')">2</button>
+<button onclick="append('3')">3</button>
+<button  onclick="append('4')">4</button>
+<button  onclick="append('5')">5</button>
+<button onclick="append('6')">6</button>
+<button onclick="append('7')">7</button>
+<button onclick="append('8')">8</button>
+<button onclick="append('9')">9</button>
+<button onclick="append('+')">+</button>
+<button  onclick="append('*')">X</button> 
+<button  onclick="Calculate()">=</button> 
+<button  onclick="clearDisplay()">C</button> 
+</div>
+</div>
+
+<script>
+    
+let currentValue = ""
+function append(value){
+    document.getElementById("textArea").value=currentValue;
+    currentValue += value;
+}
+function clearDisplay() {
+    currentValue = '';
+    document.getElementById('textArea').value = '';
+}
+function calculate() {
+    try {
+        const result = eval(currentValue);
+        document.getElementById('textArea').value = result;
+        currentValue = result.toString()
+    } catch (error) {
+        document.getElementById('display').value = 'Error';
+    }
+}
+
+
+</script>
+   
+
+   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+       .container1{
+text-align: center;
+ }
+    .container1_button{
+display: grid;
+grid-template-columns: auto auto auto;
+text-align: center;
+}
+
+    #button1{
+        width: 50px;
+        height:50px;
+    }
+    #button2{
+        width: 50px;
+        height:50px;
+    }
+    #button3{
+        width: 50px;
+        height:50px;
+    }
+    #button4{
+        width:50px;
+        height:50px;
+    }
+    #button5{
+        width: 50px;
+        height:50px;
+    }
+    #button6{
+        width:50px;
+        height:50px;
+    }
+    #button7{
+        width: 50px;
+        height:50px;
+    }
+    #button8{
+        width: 50px;
+        height:50px;
+    }
+    #button9{
+        width: 50px;
+        height:50px;
+    }
+    #button10{
+        width: 50px;
+        height:50px;
+    }
+    #button11{
+        width: 50px;
+        height:50px;
+    }
+
+</style>
+
+</body>
+</html>

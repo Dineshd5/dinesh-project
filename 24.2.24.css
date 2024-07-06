@@ -1,0 +1,388 @@
+*{margin: 0px;
+padding: 0px;
+}
+
+.container{
+   width: 100%;
+   display: inline-block;
+}
+.box1{
+    border: 2px;
+    width: 300px;
+    height:450px;
+    border-color: black;
+    border-style: solid;   
+    border-radius: 10px;
+    border: hidden;
+    box-shadow: 5px 5px 10px black;
+    margin: 80px;
+   
+}
+.box2{
+    border: 2px;
+    width: 350px;
+    height:500px;
+    border-color: black;
+    border-style: solid;   
+    border-radius: 10px;
+    border: hidden;
+    box-shadow: 5px 5px 10px black;
+    margin: 80px 100px;
+    
+}
+
+.box2 img{
+    width: 350px;
+}
+.box2 button{
+    width: 350px;
+    margin-top: 36px;
+    background-color: crimson;
+}
+
+.box1 p{
+    margin: 24px;
+}
+
+.box2 p{
+    margin: 27px;
+}
+
+#click{
+    background-color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.box2{
+    border: 2px;
+    width: 350px;
+    height:500px;
+    border-color: black;
+    border-style: solid;   
+    border-radius: 10px;
+    border: hidden;
+    box-shadow: 5px 5px 10px black;
+    margin: 80px;
+}
+img{
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h4{
+    text-align: center;
+    color: blue;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+button{
+display: block;
+margin: 0px 0px ;
+background-color: blue;
+width: 300px;
+padding: 11px;
+color: white;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border: hidden;
+}

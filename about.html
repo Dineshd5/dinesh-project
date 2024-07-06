@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">hello</h1>
+    <input type="text" value="" id="myinput" />
+    <button id="btn">click</button>
+
+    <div id="container"></div>
+
+    <script>
+      // function myfun() {
+      //   let myinput = document.getElementById("myinput").value;
+      //   console.log("user entered", myinput);
+
+      //   let heading = document.getElementById("heading").remove();
+      //   heading.innerHTML = "BYE";
+      //   heading.style.color = "#ff00ff";
+      //   heading.style.border = "2px solid green";
+      // }
+
+      // let newelement = document.createElement("p");
+      // newelement.innerHTML = "new element created";
+
+      // document.getElementById("container").append(newelement);
+
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("mouseover", () => {
+          let heading = document.getElementById("heading");
+          heading.innerHTML = "BYE";
+          heading.style.color = "#ff00ff";
+          heading.style.border = "2px solid green";
+      });
+      btn.addEventListener("mouseout", () => {
+          let heading = document.getElementById("heading");
+          heading.innerHTML = "hello";
+          heading.style.color = "#ff00ff";
+          heading.style.border = "2px solid green";
+      });
+    </script>
+  </body>
+</html>
