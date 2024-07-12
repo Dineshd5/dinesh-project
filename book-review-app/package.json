@@ -1,0 +1,14 @@
+{
+  "name": "book-review-app",
+  "version": "1.0.0",
+  "description": "A simple book review app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
