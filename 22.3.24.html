@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Increment/Decrement Value</title>
+<style>
+    .container {
+        text-align: center;
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Increment/Decrement Value</h2>
+    <input type="number" id="inputValue" value="0">
+    <br><br>
+    <button onclick="decrement()">Decrement</button>
+    <button onclick="increment()">Increment</button>
+</div>
+
+<script>
+    function increment() {
+        var inputField = document.getElementById("inputValue");
+        var value = parseInt(inputField.value);
+        value++;
+        inputField.value = value;
+    }
+
+    function decrement() {
+        var inputField = document.getElementById("inputValue");
+        var value = parseInt(inputField.value);
+        value--;
+        inputField.value = value;
+    }
+</script>
+
+</body>
+</html>

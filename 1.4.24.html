@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Turning Pages</title>
+<style>
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .book {
+        width: 300px;
+        height: 400px;
+        perspective: 1000px;
+    }
+    .page {
+        width: calc(100% / 3);
+        height: 100%;
+        position: absolute;
+        transform-origin: left center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.5s;
+    }
+    .page:nth-child(odd) {
+        z-index: 2;
+    }
+    .page:nth-child(even) {
+        z-index: 1;
+    }
+    .page.front {
+        transform: rotateY(0deg);
+    }
+    .page.back {
+        transform: rotateY(-180deg);
+    }
+    .book:hover .page.front {
+        transform: rotateY(-20deg);
+    }
+    .book:hover .page.back {
+        transform: rotateY(-200deg);
+    }
+</style>
+</head>
+<body>
+<div class="book">
+    <div class="page front">Front Page<br>Content 1</div>
+    <div class="page">Page 2<br>Content 2</div>
+    <div class="page back">Back Page<br>Content 3</div>
+</div>
+
+<script>
+    const book = document.querySelector('.book');
+    const pages = document.querySelectorAll('.page');
+
+    pages.forEach((page, index) => {
+        page.addEventListener('click', () => {
+            const currentPageIndex = Array.from(pages).findIndex(p => p.classList.contains('front'));
+            const nextPageIndex = (currentPageIndex + 1) % pages.length;
+
+            pages[currentPageIndex].classList.toggle('front');
+            pages[currentPageIndex].classList.toggle('back');
+            pages[nextPageIndex].classList.toggle('front');
+            pages[nextPageIndex].classList.toggle('back');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.nav-bar-1 ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+.container-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container-3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .container-4 {
+    display: flex;
+    justify-content: center;
+   
+}
+.container-5 {
+    display: flex;
+    justify-content: center;
+   
+}
+.purchase_table {
+  display: table-row;
+   
+}
