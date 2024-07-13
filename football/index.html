@@ -4,39 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Football Cost Converter</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="wrapper">
       <h1>Select number of hours played</h1>
       <div id="dropdownTab">
         <form>
-          <label for="hours">Choose an option:</label>
+          <label for="dropdown">Choose an option:</label>
           <select id="hours" name="dropdown">
             <option value="1">1 hour</option>
             <option value="2">2 hours</option>
             <option value="3">3 hours</option>
             <option value="4">4 hours</option>
           </select>
-        
-          <label for="minutes">Choose an option:</label>
-          <select id="minutes" name="dropdown">
-            <option value="0">0 minutes</option>
-            <option value="15">15 minutes</option>
-            <option value="30">30 minutes</option>
-            <option value="45">45 minutes</option>
-          </select>
         </form>
       </div>
-      
       <div>
-        <input type="text" id="amount" placeholder="Enter the amount" />
+        <input type="text" id="amount" placeholder="enter the amount" />
       </div>
       <div>
-        <input type="text" id="person" placeholder="Enter number of persons played" />
+        <input
+          type="text"
+          id="person"
+          placeholder="enter number of persons played"
+        />
       </div>
       <div>
-        <button type="button" onclick="convert()">Calculate</button>
+        <button type="submit" onclick="convert()">Calculate</button>
       </div>
       <div id="result"></div>
     </div>
@@ -46,8 +40,20 @@
         let amountVal = Number(document.getElementById("amount").value);
         let personPlayed = Number(document.getElementById("person").value);
         let displayResult = document.getElementById("result");
-        let resultVal = (hourVal * amountVal) / personPlayed;
-        displayResult.innerHTML = resultVal.toFixed(2) + " rupees";
+
+        // Convert hours to minutes and add them to the hours
+        let totalMinutes = convertHoursToMinutesAndAdd(hourVal);
+
+        // Calculate the result based on minutes
+        let resultVal = (totalMinutes * amountVal) / personPlayed;
+
+        displayResult.innerHTML = resultVal + " rupees";
+      }
+
+      function convertHoursToMinutesAndAdd(hours) {
+        let minutes = hours * 60;
+        let totalMinutes = minutes + hours * 60;
+        return totalMinutes;
       }
     </script>
   </body>
