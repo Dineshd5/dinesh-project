@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <div id="wrapper1"></div>
+    <div id="wrapper2"></div>
+    <div id="wrapper3"></div>
+    <div id="wrapper4"></div>
+    <div id="wrapper5"></div>
+    <div id="wrapper6"></div>
+    <div id="wrapper7"></div>
+    <div id="wrapper8"></div>
+    <div id="wrapper9"></div>
+    <div id="wrapper10">
+      <div id="join1"></div>
+      <div id="join2"></div>
+      <div id="split1"></div>
+      <div id="split2"></div>
+      <div id="split3"></div>
+      <div id="split4"></div>
+      <div id="concat1"></div>
+      <div id="concat2"></div>
+    </div>
+    <!-- string split -->
+    <script>
+      let string1 = "dinesh";
+      let stringSplit1 = string1.split(""); //a)	BASIC USAGE WITH A SPACE SEPARATOR:
+      joinResult = document.getElementById("split1");
+      joinResult.innerHTML = stringSplit1;
+    </script>
+    <script>
+      let string2 = "d,i;n|e's?h";
+      let stringSplit2 = string2.split(/[,;'|?]/); //c)	USING A REGULAR EXPRESSION AS A SEPARATOR: (Converting a String to an Array)
+      joinResult = document.getElementById("split2");
+      joinResult.innerHTML = stringSplit2;
+    </script>
+    <script>
+      let string3 = "dinesh";
+      let stringSplit3 = string3.split("", 3); //LIMITING THE NUMBER OF SPLITS
+      joinResult = document.getElementById("split3");
+      joinResult.innerHTML = stringSplit3;
+    </script>
+    <script>
+      let str1 = '"Strive not to be a success';
+      let str2 = ' but rather to be value."';
+      let str3 = str1 + str2; //concatenate
+      let result = document.getElementById("wrapper");
+      result.innerHTML = str3;
+    </script>
+
+    <script>
+      let str4 = '"this is used ';
+      let str5 = ' by using concat method."';
+      let str6 = str4.concat(str5); //invoking a method
+      let result1 = document.getElementById("wrapper1");
+      result1.innerHTML = str6;
+    </script>
+
+    <script>
+      let str7 = '"we can also use ';
+      let str8 = ' one string using concat method."';
+      let str9 = str7.concat("(more than)", str8); //invoking a method
+      let result2 = document.getElementById("wrapper2");
+      result2.innerHTML = str9;
+    </script>
+
+    <script>
+      let str01 = '"we can also use ';
+      let str02 = ' to remove string using slice method."';
+      let str03 = str02.slice(23, 30); //(starting index,ending index)
+      let result3 = document.getElementById("wrapper3");
+      result3.innerHTML = str03;
+    </script>
+
+    <script>
+      let str04 = ["a", "b", "c", "d", "e"];
+      str04.splice(0, str04.length, "splice");
+      let result4 = document.getElementById("wrapper4");
+      result4.innerHTML = str04;
+      /*this method i have said remove first starting index '0'  
+       and second mentioned  arr.length to remove all the elements 
+       and  third mentioned the string i need */
+    </script>
+
+    <script>
+      let array1 = ["a", "b", "c", "d", "e"];
+      let arrayResult = document.getElementById("wrapper5");
+      array1.push("f");
+      arrayResult.innerHTML = array1.join(", ");
+    </script>
+
+    <script>
+      let array2 = ["a", "b", "c", "d", "e"];
+      let arrayResult1 = document.getElementById("wrapper6");
+      array2.pop();
+      arrayResult1.innerHTML = array2;
+    </script>
+
+    <script>
+      let array3 = ["a", "b", "c", "d", "e"];
+      arrayResult2 = document.getElementById("wrapper7");
+      array3.shift();
+      arrayResult2.innerHTML = array3;
+    </script>
+
+    <script>
+      let array4 = ["b", "c", "d", "e"];
+      arrayResult3 = document.getElementById("wrapper8");
+      array4.unshift("a");
+      arrayResult3.innerHTML = array4;
+    </script>
+
+    <script>
+      let array5 = ["a", "b", "c", "d", "e"];
+      arrayResult4 = document.getElementById("wrapper9");
+      array5.reverse(); //reverses the array.
+      arrayResult4.innerHTML = array5;
+    </script>
+    <script>
+      let str = "Hello World";
+
+      // Step 1: Split the string into an array of characters
+      let arr = str.split(""); // ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"]
+
+      // Step 2: Reverse the array
+      arr.reverse(); // ["d", "l", "r", "o", "W", " ", "o", "l", "l", "e", "H"]
+
+      // Step 3: Join the array back into a string
+      let reversedStr = arr.join(""); // "dlroW olleH"
+
+      console.log(reversedStr);
+    </script>
+    <script>
+      let st1 = "Hello World";
+      let reversedSt1 = st1.split("").reverse().join(""); //Reversing a String in One Line
+      console.log(reversedStr1); // "dlroW olleH"
+    </script>
+
+    <!-- array join -->
+    <script>
+      let array6 = ["a", "b", "c", "d", "e"];
+      let arrayJoin = array6.join("-");
+      joinResult = document.getElementById("join1");
+      joinResult.innerHTML = arrayJoin;
+    </script>
+
+    <script>
+      let array7 = ["d", "i", "n", "e", "s", "h"];
+      let arrayJoin1 = array7.join(""); //Converting an Array to a String
+      joinResult = document.getElementById("join2");
+      joinResult.innerHTML = arrayJoin1;
+    </script>
+
+    <script>
+      let ARRAY1 = [1, 2, 3];
+      let ARRAY2 = [4, 5, 6];
+      let concatArray = ARRAY1.concat(ARRAY2); //CONCAT
+      let concatResult = document.getElementById("concat1");
+      concatResult.innerHTML = concatArray;
+    </script>
+
+    <script>
+      let ARR1 = [7, 8, 9];
+      let ARR2 = [10, 11, 12];
+      let spreadOperator = [...ARR1, ...ARR2]; //SPREAD OPERATOR (Converting a String to an Array)
+      let spreadOperatorResult = document.getElementById("concat2");
+      spreadOperatorResult.innerHTML = spreadOperator;
+    </script>
+  </body>
+</html>

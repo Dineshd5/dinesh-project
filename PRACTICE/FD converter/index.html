@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FD Converter</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h2>FD Rate calculator</h2>
+      <div class="inputdiv">
+        <input type="text" id="input" placeholder="tenure months" />
+      </div>
+      <div>
+        <button type="submit" onclick="fdrate()">Calculate</button>
+      </div>
+      <div id="result"></div>
+      <script>
+        function fdrate() {
+          rate = 0;
+          let monthsVal = Number(document.getElementById("input").value);
+          if (monthsVal < 3) {
+            rate = 5.8;
+          } else if (monthsVal >= 3 && monthsVal <= 6) {
+            rate = 6.5;
+          } else if (monthsVal >= 7 && monthsVal <= 9) {
+            rate = 6.8;
+          } else rate = 7;
+
+          let result = document.querySelector("#result");
+          result.innerHTML = `"your interest rate is ${rate} %" `;
+        }
+      </script>
+    </div>
+  </body>
+</html>

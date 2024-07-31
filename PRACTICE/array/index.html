@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array</title>
+  </head>
+  <body>
+    <div id="cities"></div>
+    <div id="marks"></div>
+    <div id="AccessArray"></div>
+    <div id="AccessArray1"></div>
+    <div id="AccessArray2"></div>
+    <div id="AccessArray3"></div>
+    <div id="AccessArray4"></div>
+    <script>
+      let cities = ["chennai", "madurai", "covai", "trichy"];
+      let citiesResult = document.getElementById("cities");
+      citiesResult.innerHTML = cities[0];
+    </script>
+    <script>
+      let marks = ["85", "10", "2", "8", "7", "98"];
+      let marksResult = document.getElementById("marks");
+      marksResult.innerHTML = marks.length;
+    </script>
+    <script>
+      let arr = ["85", "10", "2", "8", "7"];
+      let arrResult = document.getElementById("AccessArray");
+      arrResult.innerHTML = arr[0];
+    </script>
+    <script>
+      let arr1 = ["85", "10", "2", "8", "7"];
+      let arr2 = ["85", "10", "2", "8", "7"];
+      let arr1Result = document.getElementById("AccessArray1");
+      let arr2Result = document.getElementById("AccessArray2");
+      arr1Result.innerHTML = arr1[5];
+      arr2Result.innerHTML = arr1[arr1.length - 1];
+    </script>
+    <script>
+      let array = ["85", 85, [3, 4], "&", "h"];
+      let arrayResult = document.getElementById("AccessArray3");
+      arrayResult.innerHTML = array[2][0];
+    </script>
+    <script>
+      let MatrixArray = [
+        [3, 4, 5],
+        [4, 5, 7],
+        [6, 7, 8],
+      ];
+      let MatrixArrayResult = document.getElementById("AccessArray4");
+      MatrixArrayResult.innerHTML = MatrixArray[2][0];
+    </script>
+  </body>
+</html>

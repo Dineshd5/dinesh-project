@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arrayProject</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <img src="Screenshot .png" alt="no image" width="100%" />
+    </div>
+
+    <script>
+      // Initial array
+      let arr = [5, 8, 10, 7, 9, 11];
+
+      // Replace 7, 9, 11 with 17, 19, 111
+      arr.splice(3, 3, 17, 19, 111);
+      console.log(arr); // Output after replacement
+
+      // Insert 100 in the beginning
+      arr.unshift(100);
+      console.log(arr); // Output after inserting 100 at the beginning
+
+      // Insert 200 in the last but one position
+      arr.splice(arr.length - 1, 0, 200);
+      console.log(arr); // Output after inserting 200 in the last but one position
+
+      // Add 1000 at the end
+      arr.push(1000);
+      console.log(arr); // Output after adding 1000 at the end
+
+      // Insert 0 in the middle
+      let middleIndex = Math.floor(arr.length / 2);
+      arr.splice(middleIndex, 0, 0);
+      console.log(arr); // Final output after inserting 0 in the middle
+    </script>
+  </body>
+</html>

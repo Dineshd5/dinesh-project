@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RandomNameGenerator</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <button type="submit" onclick="convert()">Submit</button>
+      <div id="result"></div>
+    </div>
+    <script>
+      function convert() {
+        let name = "dinesh";
+        let randomindex = Math.floor(Math.random() * name.length);
+        let randomLetter = name[randomindex];
+        let result = document.getElementById("result");
+        result.innerHTML = randomLetter;
+      }
+    </script>
+  </body>
+</html>

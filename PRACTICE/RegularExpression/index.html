@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegularExpression</title>
+  </head>
+  <body>
+    <script>
+      //Exercise 1: Check if a String Contains "hello"
+      const regex = /hello/;
+      // looks for the exact word "hello" in the string.
+      console.log(regex.test("hello world"));
+      //test method checks if the pattern is found in the string.
+      console.log(regex.test("hi world"));
+    </script>
+
+    <script>
+      //Exercise 2: Find Digits in a String
+      const regex1 = /\d/g;
+      //\d matches any digit (0-9).g flag means it finds all matches (global search).
+      console.log("My phone number is 12345".match(regex1));
+      //match method returns all matches as an array.(syntax-string.match(regex))
+    </script>
+
+    <script>
+      //Exercise 3: Find All Words in a String
+      const regex2 = /\b\w+\b/g;
+      /*'\b' matches a word boundary.            
+       '\w+'' matches one or more word characters (letters, digits, and underscores).
+       \w matches any word character, which includes:(letters, digits, and underscores).
+      '+' is a quantifier that matches the preceding element one or more times.
+      'g' flag finds all matches.
+      'match' method returns all matches as an array.*/
+      console.log("Hello world! How are you?".match(regex2));
+    </script>
+    <script>
+      //Exercise 4: Replace Vowels with a Dash
+      const regex3 = /[aeiou]/gi; /*[aeiou] matches any vowel
+      .'g' flag means global search (find all matches)
+      .'i' flag means case-insensitive search (matches both uppercase and lowercase vowels)*/
+      console.log("Hello World".replace(regex3, "-"));
+      //.'replace' method replaces matched characters with the provided string (-).
+    </script>
+  </body>
+</html>

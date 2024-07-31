@@ -1,539 +1,510 @@
-*{
-    margin: 0px;
-padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.container{
-   
-    width: auto;
-    height: 20px;
-    margin: 5px;
-    display:flex;
-  justify-content:space-evenly
-    
-    
+.container {
+  width: auto;
+  height: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.container-2{
-   
-   width: auto;
-   height: 20px;
-   margin: 1px;
-   display:flex;
-   font-size: 15px;
-  
+.container-2 {
+  width: auto;
+  height: 20px;
+  margin: 1px;
+  display: flex;
+  font-size: 15px;
 }
-.container-1{
-   
-   width: auto;
-   height: 20px;
-   margin-right: 380px;
-   display:flex;
-   font-size: 15px;
+.container-1 {
+  width: auto;
+  height: 20px;
+  margin-right: 380px;
+  display: flex;
+  font-size: 15px;
 }
-ul{
-    gap: 20px;
-    list-style-type: none;
+ul {
+  gap: 20px;
+  list-style-type: none;
 }
-li a:hover{
-    color:orange;
+li a:hover {
+  color: orange;
 }
 
-li a{
-    text-decoration: none;
-    color: gray;
-    font-family: "Lato", sans-serif;
-    font-size: small;
+li a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Lato", sans-serif;
+  font-size: small;
 }
-span{
-    margin-left: 20px;
-}
-
-.footer{
-   
-    width: auto;
-    height: 20px;
-    display:flex;
-    font-size: 15px;
-    justify-content:space-evenly
- }
-
- .footer-2{
-   width: auto;
-    height: 20px;
-    display:flex;
-    margin-top: 20px;
-padding-top: 5px;
-margin-left: 100px;
- }
-
- .footer-1{
-     margin-top: 15px;
-     margin-right: 100px;
-  }
-   .footer-1 a{
-    font-size: 25px;
-    font-family: "Bruno Ace", sans-serif;
-    color: black;
-    width: auto;
-    height: 20px;
-    text-decoration: none;
-   }
-   .footer-2 a{
-    font-size: 15px;
-    color: black;
-   }
-
-   .footer-1 span{
-    display: none;
-    color:white;
-    background-color:black;
-    padding: 4px;
-    text-align: center;
-
-   }
-.footer-1:hover span{
-display: block;
-
+span {
+  margin-left: 20px;
 }
 
-.footer-3 input{
- background-color: whitesmoke;
- margin-bottom: 2px;
- border: none;
- margin-left: 10px;
- outline: none;
+.footer {
+  width: auto;
+  height: 20px;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-evenly;
 }
 
-::placeholder{
-    color: gray;
+.footer-2 {
+  width: auto;
+  height: 20px;
+  display: flex;
+  margin-top: 20px;
+  padding-top: 5px;
+  margin-left: 100px;
+}
+
+.footer-1 {
+  margin-top: 15px;
+  margin-right: 100px;
+}
+.footer-1 a {
+  font-size: 25px;
+  font-family: "Bruno Ace", sans-serif;
+  color: black;
+  width: auto;
+  height: 20px;
+  text-decoration: none;
+}
+.footer-2 a {
+  font-size: 15px;
+  color: black;
+}
+
+.footer-1 span {
+  display: none;
+  color: white;
+  background-color: black;
+  padding: 4px;
+  text-align: center;
+}
+.footer-1:hover span {
+  display: block;
+}
+
+.footer-3 input {
+  background-color: whitesmoke;
+  margin-bottom: 2px;
+  border: none;
+  margin-left: 10px;
+  outline: none;
+}
+
+::placeholder {
+  color: gray;
 }
 .footer-3 {
-     display:flex;
-     flex-direction: row-reverse;
-    background-color:whitesmoke;
-    padding-bottom: 28px;
-    padding-top:10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 15px;
-    border-radius: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: whitesmoke;
+  padding-bottom: 28px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 15px;
+  border-radius: 10px 10px 10px 10px;
 }
-   .image-1 img{
-    display: inline;
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    object-fit: cover;
-    float: inline-start;
-    position: relative;
-   }
-   .Search-bar span{
+.image-1 img {
+  display: inline;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  object-fit: cover;
+  float: inline-start;
+  position: relative;
+}
+.Search-bar span {
   margin-top: 25px;
   color: blue;
-   }
- .Search-bar  :hover .footer-3{
-    display:flex;
-    
-   }
-   .image-1 .content{
-  
-    position: absolute;
-font-size: large;
-top:250px;
-left:50px;
-   }
-   .image-1 h1{
-    font-family: "Bruno Ace", sans-serif;
-   }
-   .image-1 h2{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-   }
- 
-
-
-    #from span{
-    
-        font-size:x-large;
-       }
-
-   .content-1{
-display: inline;
-margin-left: 5px;
-    margin-top: 30px
-   }
-
-
-   #buynow button{
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px 10px 10px 10px;
-    font-size: 15px;
-    border-width: 1px;
-    margin-top: 10px;
-   }
-
-   #buynow:hover button{
-    background-color: white;
-    color: black;
-
-   }
-   #learnmore button{
-    background-color:white;
-    color:black;
-    padding: 5px 10px;
-    border-radius: 10px 10px 10px 10px ;
-    border-width: 1px;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-left: 20px;
-   }
-
-   #learnmore:hover button{
-    background-color:black;
-    color:white;
-   }
-.nav{
-    display: flex;
-    justify-content:space-evenly;
-    padding: 30px 300px;
+}
+.Search-bar :hover .footer-3 {
+  display: flex;
+}
+.image-1 .content {
+  position: absolute;
+  font-size: large;
+  top: 250px;
+  left: 50px;
+}
+.image-1 h1 {
+  font-family: "Bruno Ace", sans-serif;
+}
+.image-1 h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.nav img:hover{
-   scale: 1.1;
-   transition: 0.5s;
-}
-.nav h3{
-    
-   text-align: center;
-    font-family: "Encode Sans", sans-serif;
-       font-size: 15px;
-       color: dimgray;
-       font-weight: 2px;
-}
-.pricing-0{
-    display: flex;
+#from span {
+  font-size: x-large;
 }
 
-.pricing-1 img{
-   width: 130px;
-   height: 130px;
+.content-1 {
+  display: inline;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+
+#buynow button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 15px;
+  border-width: 1px;
+  margin-top: 10px;
+}
+
+#buynow:hover button {
+  background-color: white;
+  color: black;
+}
+#learnmore button {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 1px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#learnmore:hover button {
+  background-color: black;
+  color: white;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-direction:column;
+  flex-wrap: wrap;
+}
+.coupon{
+width:100%;
+height: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.nav img:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+.nav h3 {
+  text-align: center;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 15px;
+  color: dimgray;
+  font-weight: 2px;
+}
+.pricing-0 {
+  display: flex;
+}
+
+.pricing-1 img {
+  width: 130px;
+  height: 130px;
 }
 .pricing {
-    display: flex;
-    justify-content:space-evenly;
-
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.pricing-1 span{
-
+.pricing-1 span {
   display: flex;
   margin: 30px;
- }
- /* ( */
- .pricing-1 a{
-  
-    margin-left: 150px;
-   }
-
-
-   .pricing-2 h5{
-    margin:10px;
-    }
-    .pricing-2 h4{
-        margin:10px;
-        }
-        .pricing-2 ins{
-            margin-right:10px;
-            text-decoration: none;
-            color: red;
-            }
-     /* ) */
-
-     .pricing-3 a{
-  
-        margin-left: 150px;
-       }
-    
-     .pricing-3 {
-       margin-right: 200px;
-       }
-       .pricing-3 h5{
-        margin:10px;
-        }
-        .pricing-3 h4{
-            margin:10px;
-            }
-            .pricing-3 ins{
-                margin-right:10px;
-                text-decoration: none;
-                color: red;
-            }
-            /* ) */
-            .pricing-4 a{
-  
-                margin-left: 150px;
-               }
-            
-            .pricing-4 h5{
-                margin:10px;
-                }
-                .pricing-4 h4{
-                    margin:10px;
-                    }
-                    .pricing-4 ins{
-                        margin-right:10px;
-                        text-decoration: none;
-                        color: red;
-                    }
-                    /* ) */
-.pricing-2{
-   text-align: center;
-   margin: 20px;
- 
 }
-.pricing-3{
-    text-align: center;
-    margin: 20px;
- }
- .pricing-4{
-    text-align: center;
-    margin: 20px;
- }
- .pricing img:hover{
-    scale: 1.04;
-    transition: 0.6s;
- }
+/* ( */
+.pricing-1 a {
+  margin-left: 150px;
+}
+
+.pricing-2 h5 {
+  margin: 10px;
+}
+.pricing-2 h4 {
+  margin: 10px;
+}
+.pricing-2 ins {
+  margin-right: 10px;
+  text-decoration: none;
+  color: red;
+}
+/* ) */
+
+.pricing-3 a {
+  margin-left: 150px;
+}
+
+.pricing-3 {
+  margin-right: 200px;
+}
+.pricing-3 h5 {
+  margin: 10px;
+}
+.pricing-3 h4 {
+  margin: 10px;
+}
+.pricing-3 ins {
+  margin-right: 10px;
+  text-decoration: none;
+  color: red;
+}
+/* ) */
+.pricing-4 a {
+  margin-left: 150px;
+}
+
+.pricing-4 h5 {
+  margin: 10px;
+}
+.pricing-4 h4 {
+  margin: 10px;
+}
+.pricing-4 ins {
+  margin-right: 10px;
+  text-decoration: none;
+  color: red;
+}
+/* ) */
+.pricing-2 {
+  text-align: center;
+  margin: 20px;
+}
+.pricing-3 {
+  text-align: center;
+  margin: 20px;
+}
+.pricing-4 {
+  text-align: center;
+  margin: 20px;
+}
+.pricing img:hover {
+  scale: 1.04;
+  transition: 0.6s;
+}
 
 /* ( */
 
-
-.Recommended a{
-
-  
-    margin-left: 150px;
-   }
-
- 
-   .Recommended h4{
-    margin:10px;
-    }
-    
-    .Recommended ins{
-            margin-right:10px;
-            text-decoration: none;
-            color: red;
-        }
-        /* ) */
-
-        .Recommended {
-            margin-right:50px;
-          
-        }
-
- .Recommended-0 img{
-    width: 200px;
-    height: 200px;
-    display: flex;
+.Recommended a {
+  margin-left: 150px;
 }
 
+.Recommended h4 {
+  margin: 10px;
+}
 
-.Recommended img{
-    width: 130px;
-    height: 130px;
+.Recommended ins {
+  margin-right: 10px;
+  text-decoration: none;
+  color: red;
+}
+/* ) */
+
+.Recommended {
+  margin-right: 50px;
+}
+
+.Recommended-0 img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+}
+
+.Recommended img {
+  width: 130px;
+  height: 130px;
 }
 
 .Recommended-0 {
-    display: flex;
+  display: flex;
 }
-.Recommended-2{
-    text-align: center;
-    margin: 20px;
+.Recommended-2 {
+  text-align: center;
+  margin: 20px;
 }
-.Recommended-3{
-    text-align: center;
-    margin: 20px;
+.Recommended-3 {
+  text-align: center;
+  margin: 20px;
 }
-.Recommended span{
-   display: flex;
-   margin: 30px;
- }
- .NewLaunch img{   
-    margin-top: 50px;
-    object-fit:contain;
-   display: flex;
- margin-left: 10%;
- border-radius: 20px;
- }
- .NewLaunch h2{
-   margin-top: 50px;  
-text-align: center;
-font-family: "Poppins", sans-serif;
-font-size: 30px;
- }
- .NewLaunch  img:hover{
-    scale: 1.04;
-    transition: 0.6s;
- }
- .NewLaunch  h2:hover{
-    scale: 1.04;
-    transition: 0.6s;
- }
-.bestsellers-1 img{
-width: 80%;
-border-radius: 20px;
+.Recommended span {
+  display: flex;
+  margin: 30px;
 }
-.bestsellers-2 img{
-    width: 80%;
-    display: flex;
-margin-bottom: 20px;
-border-radius: 20px;
+.NewLaunch img {
+  margin-top: 50px;
+  object-fit: contain;
+  display: flex;
+  margin-left: 10%;
+  border-radius: 20px;
+}
+.NewLaunch h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.NewLaunch img:hover {
+  scale: 1.04;
+  transition: 0.6s;
+}
+.NewLaunch h2:hover {
+  scale: 1.04;
+  transition: 0.6s;
+}
+.bestsellers-1 img {
+  width: 80%;
+  border-radius: 20px;
+}
+.bestsellers-2 img {
+  width: 80%;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.bestsellers {
+  display: flex;
+  margin-left: 150px;
+}
+.bestsell {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.bestsell i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.bestsellers-1 {
+  position: relative;
+}
+.bestsellers-01 {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+}
+.bestsellers-2 {
+  position: relative;
+}
+.bestsellers-02 {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+.bestsellers-03 {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+.bestsellers-1 h5 {
+  margin-bottom: 30px;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  background-color: orangered;
+  width: 110px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+.bestsellers-1 h2 {
+  color: white;
+  margin: 15px 0px;
+}
+.bestsellers-1 h4 {
+  color: gray;
+  margin: 15px 0px;
+}
+.bestsellers-1 ins {
+  color: red;
+  margin: 15px 15px;
+  text-decoration: none;
+}
 
-    }
-    .bestsellers {
-      
-        display: flex;
-       margin-left: 150px;
-        }
-        .bestsell{
-      display:flex;
-        justify-content: center;
-         margin: 30px;
-        font-size:20px;
-        font-family: "Poppins", sans-serif;
-       
-            }
-            .bestsell i{
-                font-size: 30px;
-                margin-right: 10px;
-            }
-            .bestsellers-1 {
-                position: relative;
-            }
-                .bestsellers-01 {
-               position:absolute;
-               bottom: 70px;
-               left: 50px;
-                    }
-                    .bestsellers-2 {
-                        position: relative;
-                    }
-                    .bestsellers-02 {
-                    
-                        position:absolute;
-                        top: 150px;
-                        left: 30px;
-                     }
-                     .bestsellers-03 {
-                       position:absolute;
-                       bottom: 50px;
-                       left: 30px;
-                     }   
-                     .bestsellers-1 h5{
-                        margin-bottom: 30px;
-                        color: white;
-                        padding: 5px 5px 5px 5px;
-                        background-color: orangered;
-                        width: 110px;
-                        border-radius: 20px;
-                     font-family: "Poppins", sans-serif;
-                     font-size: 13px;
-                    }
-                    .bestsellers-1 h2{
-                        color: white;
-                        margin: 15px 0px;
-                    }
-                    .bestsellers-1 h4{
-                        color:gray;
-                        margin: 15px 0px;
-                    }
-                    .bestsellers-1 ins{
-                        color:red;
-                        margin: 15px 15px;
-                        text-decoration: none;
-                    }
-           
 /* CSS for screens larger than 1200px */
 @media only screen and (min-width: 1200px) {
-    /* Add your styles for larger screens here */
-    .container {
-        flex-direction: row;
-    }
+  /* Add your styles for larger screens here */
+  .container {
+    flex-direction: row;
+  }
 
-    .footer {
-        flex-direction: row;
-    }
+  .footer {
+    flex-direction: row;
+  }
 
-    .footer-1 {
-        margin-right: 200px;
-    }
+  .footer-1 {
+    margin-right: 200px;
+  }
 
-    .footer-2 {
-        margin-left: 50px;
-    }
+  .footer-2 {
+    margin-left: 50px;
+  }
 
-    .nav {
-        padding: 30px 100px;
-    }
+  .nav {
+    padding: 30px 100px;
+  }
 }
 
 /* CSS for screens between 992px and 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /* Add your styles for medium-sized screens here */
-    .container {
-        flex-direction: column;
-    }
+  /* Add your styles for medium-sized screens here */
+  .container {
+    flex-direction: column;
+  }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-1,
-    .footer-2 {
-        margin: 10px;
-    }
+  .footer-1,
+  .footer-2 {
+    margin: 10px;
+  }
 
-    .nav {
-        padding: 30px 50px;
-    }
+  .nav {
+    padding: 30px 50px;
+  }
 }
 
 /* CSS for screens between 768px and 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Add your styles for tablets and small laptops here */
-    .nav {
-        padding: 30px;
-    }
+  /* Add your styles for tablets and small laptops here */
+  .nav {
+    padding: 30px;
+  }
 }
 
 /* CSS for screens smaller than 768px (mobile devices) */
 @media only screen and (max-width: 767px) {
-    /* Add your styles for mobile devices here */
-    .container {
-        flex-direction: column;
-    }
+  /* Add your styles for mobile devices here */
+  .container {
+    flex-direction: column;
+  }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-1,
-    .footer-2 {
-        margin: 10px;
-    }
+  .footer-1,
+  .footer-2 {
+    margin: 10px;
+  }
 
-    .nav {
-        padding: 20px;
-    }
+  .nav {
+    padding: 20px;
+  }
 
-    .footer-1 span {
-        display: none;
-    }
+  .footer-1 span {
+    display: none;
+  }
 }
-
-
-
-
-          
-

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expression Excersise</title>
+  </head>
+  <body>
+    <script>
+      let sentence1 = "my name is Dinesh";
+      let regex1 = /Dinesh/;
+      let result1 = regex1.test(sentence1);
+      //using test method
+      console.log(result1);
+    </script>
+    <script>
+      let sentence2 = "my name is Dinesh";
+      let regex2 = /dinesh/;
+      //THIS IS CASE SENSITIVE THIS WOULD NOT MATCH IF IT IS LOWERCASE
+      let result2 = regex2.test(sentence2);
+      console.log(result2);
+    </script>
+
+    <script>
+      let carString = "he has a BMW car";
+      let carRegex = /BMW|Benz|Audi/;
+      //OR (|) OPERATOR
+      //TO MATCH FOR MULTIPLE WORDS INSTEAD OF JUST A SINGLE WORD.
+      let result3 = carRegex.test(carString);
+      console.log(result3);
+    </script>
+  </body>
+</html>

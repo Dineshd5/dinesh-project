@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h2>Type a Sentence</h2>
+      <textarea name="textarea" id="textarea"></textarea><br />
+      <div class="button-container">
+        <button type="submit" onclick="convert()">Calculate Words</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script>
+      function convert() {
+        let textarea = document.getElementById("textarea").value;
+        let calculateWords = textarea.replace(/\s/g, "").length;
+        result.innerHTML = calculateWords + " words";
+      }
+    </script>
+  </body>
+</html>
