@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobeEligibilityChecker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div id="wrapper">
+    <div id="radio">
+      <label>
+        <input type="radio" name="option" value="Illiterate" /> Illiterate
+      </label>
+      <label>
+        <input type="radio" name="option" value="HighSchool" /> HighSchool
+      </label>
+      <label> <input type="radio" name="option" value="UG" /> UG </label>
+      <label> <input type="radio" name="option" value="PG" /> PG </label>
+      <label>
+        <input type="radio" name="option" value="Doctorate" /> Doctorate
+        <!-- The name attribute in radio buttons groups them together, so only one button in the group can be selected at a time. I
+        t helps organize form data by sending the selected radio button's value to the server under that name when the form is submitted. 
+        This makes it easier to handle and retrieve data. 
+        It also clearly shows that the radio buttons are related choices, making the code easier to understand and work with. -->
+      </label>
+    </div>
+    <button type="submit" id="button">Check Eligibility</button>
+   
+  </div>
+  <script src="script.js"></script>
+    </body>
+</html>

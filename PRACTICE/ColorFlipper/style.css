@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  font-family: "Apple Chancery", cursive;
+}
+#heading {
+  text-align: left;
+  margin-bottom: 0px;
+  font-size: 2em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  color: crimson;
+}
+#color {
+  float: right;
+  /* The `float: right;` CSS property is used to position an element to the 
+    right within its containing element, allowing other content to wrap around it on the left. */
+  margin-right: 15px;
+}
+
+#wrap {
+  height: 90vh;
+  /* The `vh` (viewport height) unit in CSS is used to 
+    set an element's height relative to the height of the viewport, 
+    where `1vh` equals 1% of the viewport height. For example, 
+    `50vh` would set the height to 50% of the viewport height. */
+  width: 100vw;
+  /* The `vw` (viewport width) unit in CSS is used to 
+    set an element's width relative to the width of the viewport, 
+    where `1vw` equals 1% of the viewport width. For example, 
+    `50vw` would set the width to 50% of the viewport width. */
+  border-top: 3px solid #323232;
+  display: flex;
+  align-items: center;
+  /* align-items: Aligns flex items along the cross axis 
+  (vertical axis if the flex direction is row). */
+  justify-content: center;
+  /* justify-content: Aligns flex items along the main axis 
+  (horizontal axis if the flex direction is row). */
+}
+
+button {
+  border: 1px solid black;
+  background-color: rgb(219, 54, 54);
+  color: white;
+  border-radius: 15px;
+  padding: 20px 80px;
+  font-size: 28px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}

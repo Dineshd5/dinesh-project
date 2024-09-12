@@ -1,0 +1,167 @@
+/* Basic styles for the body element */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the logo image */
+header .logo img {
+    height: 40px;
+}
+
+/* Styles for the navigation links */
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Styles for the login link */
+header .login a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Styles for the hero section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+/* Styles for the main heading in the hero section */
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for the subheading in the hero section */
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Styles for the pricing section */
+.pricing {
+    padding: 2rem;
+}
+
+/* Styles for the toggle buttons in the pricing section */
+.toggle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Styles for individual toggle buttons */
+.toggle .toggle-btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for the active toggle button */
+.toggle .toggle-btn.active {
+    background-color: #0056b3;
+}
+
+/* Styles for the plans container */
+.plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Styles for individual plan cards */
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 22%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Styles for the plan titles */
+.plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for the plan prices */
+.plan p {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+/* Styles for the plan feature list */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* Styles for individual plan features */
+.plan ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the call-to-action section */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+/* Styles for the call-to-action button */
+.cta button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Styles for the call-to-action description */
+.cta p {
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* Styles for the policies section */
+.policies {
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+/* Styles for individual policy descriptions */
+.policies .policy {
+    margin-bottom: 1rem;
+}
+
+/* Styles for policy titles */
+.policies .policy h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles for policy descriptions */
+.policies .policy p {
+    color: #666;
+}

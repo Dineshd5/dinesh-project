@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#button {
+  color: white;
+  background-color: hsl(116, 75%, 48%);
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+#wrapper {
+  margin-top: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
+  text-align: center;
+  background-color: burlywood;
+  padding: 30px 10px;
+  border-radius: 20px;
+}
+
+#radio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45%; /* Aligns items to the start of the flex container */
+}
+
+#radio label {
+  display: flex;
+  margin-bottom: 10px; /* Space between each label */
+  font-size: 20px;
+}
+#result {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(7, 31, 139);
+}

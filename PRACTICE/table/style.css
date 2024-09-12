@@ -1,0 +1,57 @@
+/* Style for the body element to set general page appearance */
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font type for readability */
+    background-color: #f0f8ff; /* Alice blue background color for the entire page */
+    margin: 0; /* Removes default margin to utilize full width */
+    padding: 20px; /* Adds space around the content */
+    text-align: center; /* Centers all text within the body */
+}
+
+/* Style for the main heading (h1) */
+h1 {
+    color: #4a90e2; /* Bright blue color for the heading text */
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+/* Style for the table element */
+table {
+    width: 80%; /* Sets the table width to 80% of the containing element */
+    margin: 0 auto; /* Centers the table horizontally on the page */
+    border-collapse: collapse; /* Merges table borders into a single border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow around the table */
+}
+
+/* Style for the table header section */
+thead {
+    background-color: #ff6f61; /* Coral color background for the table header */
+    color: white; /* White text color for contrast with the header background */
+}
+
+/* Style for the table header cells (th) */
+thead th {
+    padding: 12px; /* Adds padding inside header cells for spacing */
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+/* Style for odd rows in the table body */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Very light gray background for odd-numbered rows */
+}
+
+/* Style for even rows in the table body */
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White background for even-numbered rows */
+}
+
+/* Style for the table body cells (td) */
+tbody td {
+    padding: 12px; /* Adds padding inside body cells for readability */
+    border: 1px solid #ddd; /* Light gray border around cells to define boundaries */
+}
+
+/* Style for table rows (tr) on hover */
+tbody tr:hover {
+    background-color: #e3f2fd; /* Light blue background when hovering over a row */
+    cursor: pointer; /* Changes cursor to a pointer to indicate clickable rows */
+}
